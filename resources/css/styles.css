@@ -3,7 +3,7 @@
 /* ---------------------------------------------------------------- */
 *{
     padding: 0px;
-    margin: 0px;
+    margin: 0px auto;
     box-sizing: border-box;
 }
 
@@ -14,4 +14,126 @@ html{
     background-color: #ffffff;
     text-rendering: optimizeLegibility;/*Đây là cách hiển thị chữ trên website*/
     /* Mặc định là 16px*/
+}
+
+
+/* ------------------------------------ */
+/* ------------REUSABLE COMPONENT------ */
+/* ------------------------------------ */
+.row{
+    max-width: 1140px;
+}
+.clear-fix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* ------------------------------ */
+/* -----------GENERAL SECTION------ */
+/* ------------------------------ */
+.general-section img{
+    width: 70px;
+    border-radius: 60%;
+    vertical-align: middle;
+    position: relative;
+    left: 200px;
+    margin-top: 30px;
+}
+
+.general-section p{
+    font-size: 80%;
+    margin-top: 5px;
+}
+.general-section .special{
+    margin-top: 8px;
+    transform: translate(-290px, 0px);
+    width: 100px;
+    height: 3px;
+    background-color: rgb(140, 231, 231);
+    border: 0;
+}
+
+.general-section h2{
+    color: rgb(18, 161, 161);
+}
+
+.general-section ul li{
+    list-style: none;
+}
+.general-section ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+.general-section ul li i{
+    margin-right: 5px;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------SUMMARY-SECTION ------------------- */
+/* ------------------------------------------------------- */
+.summary-section{
+    margin-top: 15px;
+}
+.summary-section .title{
+    font-weight: bold;
+}
+.summary-section .long-text{
+    margin-top: 15px;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------EDUCATION-SECTION-------------------- */
+/* ------------------------------------------------------- */
+.education-section{
+    margin-top: 15px;
+}
+.education-section .title{
+    font-weight: bold;
+}
+.education-section p{
+    color: rgb(18, 161, 161);
+}
+
+/* ------------------------------------------------------- */
+/* ---------------WORKING EXPERIENCES SECTION------------ */
+/* ------------------------------------------------------- */
+.working-experiences-section{
+    margin-top: 15px;
+}
+.working-experiences-section .title{
+    font-weight: bold;
+}
+.working-experiences-section .company-name{
+    color: rgb(18, 161, 161);
+}
+.working-experiences-section .role{
+    color: rgb(18, 161, 161);
+}
+
+/* ----------------------------------------------------------- */
+/* -----------------------AWARD-SECTION---------------------- */
+/* ----------------------------------------------------------- */
+.award-section{
+    margin-top: 15px;
+}
+.award-section .title{
+    font-weight: bolder;
+}
+.award-section img{
+    width: 250px;
+}
+
+/* ------------------------------------------------------------ */
+/* ---------------------COMPETENCES-SECTION------------------------ */
+/* ------------------------------------------------------------ */
+.competences-section{
+    margin-top: 15px;
+}
+.competences-section .title{
+    font-weight: bold;
+}
+.competences-section ul li{
+    list-style: none;
+    margin-bottom: 0px;
 }
